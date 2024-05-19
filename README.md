@@ -1,13 +1,19 @@
 # 2024新闻主题分析
 
+<<<<<<< HEAD
 <!-- 参考文档：https://zhuanlan.zhihu.com/p/662387504 -->
+=======
+>>>>>>> f9eedddb8866c3e3f920fc2f85263f454fec7cc3
 ## 数据采集
 国网福建行业资讯模块 <br>
 网址：http://www.fj.sgcc.com.cn/html/main/col12/column_12_1.html<br>
 时间范围：2016-09——2024-04<br>
 新闻数量：总计1595篇<br>
 
+<<<<<<< HEAD
 <!-- ![alt text](Figs/部分月份新闻数量.png) -->
+=======
+>>>>>>> f9eedddb8866c3e3f920fc2f85263f454fec7cc3
 ```
 date  count
 2016-09	11
@@ -52,4 +58,8 @@ date  count
 ![alt text](Figs/7topics.png)
 
 主题概率变化热力图
+<<<<<<< HEAD
 ![alt text](Figs/主题概率变化热力图.png)
+=======
+![alt text](Figs/主题概率变化热力图.png)
+>>>>>>> f9eedddb8866c3e3f920fc2f85263f454fec7cc3
