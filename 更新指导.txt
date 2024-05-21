@@ -1,0 +1,37 @@
+https://worktile.com/kb/ask/234759.html
+26341@hy MINGW64 ~/Desktop/docs (master)
+$ git init
+
+$ git branch
+* master
+
+$ git pull origin master
+From https://github.com/zhizhou-1/docs
+ * branch            master     -> FETCH_HEAD
+Auto-merging Files/7topic.html
+CONFLICT (add/add): Merge conflict in Files/7topic.html
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+26341@hy MINGW64 ~/Desktop/docs (master|MERGING)
+$ git add .
+warning: in the working copy of 'Files/7topic.html', LF will be replaced by CRLF the next time Git touches it
+
+26341@hy MINGW64 ~/Desktop/docs (master|MERGING)
+$ git commit -m "更新代码“
+> "、
+[master f68d821] 更新代码“
+
+26341@hy MINGW64 ~/Desktop/docs (master)
+$ git push origin master
+Enumerating objects: 28, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (18/18), 66.19 KiB | 7.35 MiB/s, done.
+Total 18 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), completed with 3 local objects.
+To https://github.com/zhizhou-1/docs.git
+   f9eeddd..f68d821  master -> master
+
