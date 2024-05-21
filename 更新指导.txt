@@ -1,4 +1,8 @@
-https://worktile.com/kb/ask/234759.html
+十分钟创建你的个人笔记网站：docsify快速入门:https://zhuanlan.zhihu.com/p/662387504
+
+docsify中文文档：https://jingping-ye.github.io/docsify-docs-zh/#/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/%E5%BC%80%E5%A7%8B
+
+更新指导：https://worktile.com/kb/ask/234759.html
 26341@hy MINGW64 ~/Desktop/docs (master)
 $ git init
 
