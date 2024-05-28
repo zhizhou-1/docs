@@ -81,6 +81,7 @@ date	count
 
 ![alt text](0528-Figs/4topics.png)
 
+file:///C:/Users/26341/Desktop/%E7%94%B5%E7%BD%91%E9%A1%B9%E7%9B%AE-%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90/0528_LDA_output/4topic.html#topic=0&lambda=1&term=
 
 **主题 1:**
 
