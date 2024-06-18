@@ -87,20 +87,26 @@ Jaccard相似系数：适用于集合数据，可以衡量两个集合之间的�
 暂停恢复和减容正相关0.52
 
 暂停恢复和暂停正相关0.42
-## 余弦相似度
+## 相似度
 
+
+
+### 余弦相似度
 由于相关系数矩阵是一个矩阵，因此在计算余弦相似度前会将矩阵展平成一维向量
 
 好像余弦相似度并不太能区分出各个行业的不同
 
 余弦相似度只考虑方向不考虑大小，感觉不太适用
-![alt text](<0618output/Cosine_Similarity/Industry Correlation Matrix Cosine Similarity.png>)
+![alt text](<0618output/Similarity/Industry Correlation Matrix Cosine Similarity.png>) 
+
+### 欧氏距离
+![alt text](<0618output/Similarity/Industry Correlation Matrix Euclidean Distance.png>) 
+
+### Pearson相关系数
+![alt text](<0618output/Similarity/Industry Correlation Matrix Pearson Similarity.png>)
 
 
-##
-
-
-## 其他问题
+## 企业相关问题
 
 要将企业与其对应行业作比较，得出企业与行业的一致性和特异性
 
