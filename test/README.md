@@ -36,6 +36,7 @@
 
 ### 上周进展
 所看文献：
+1
 
 1.《StockGPT: A GenAI Model for Stock Prediction and Trading》 ：
 
