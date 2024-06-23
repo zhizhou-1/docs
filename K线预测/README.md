@@ -3,9 +3,8 @@
 # 课题记录
 ## 24-0518开题
 [开题报告](开题报告.pdf)
-主要参考：[《Interpretable image-based deep learning for price trend prediction in ETF markets》](<K线预测\文献\Zhang 等 - 2023 - Interpretable image-based deep learning for price .pdf>)，
-
-上述文章又参考了[(Re‐)Imag(in)ing Price Trends](<K线预测\文献\Jiang 等 - 2023 - (Re‐)Imag(in)ing Price Trends.pdf>)
+主要参考：[《Interpretable image-based deep learning for price trend prediction in ETF markets》](<文献/Zhang 等 - 2023 - Interpretable image-based deep learning for price .pdf>)
+上述文章又参考了[(Re‐)Imag(in)ing Price Trends](<文献/Jiang 等 - 2023 - (Re‐)Imag(in)ing Price Trends.pdf>)
 
 整体思路：
 
@@ -48,7 +47,7 @@ StockGPT仅使用到2000年的数据训练一次
 2.综述文章：
 来源期刊：PeerJ Computer Science  不过好像并不是好的期刊，四区
 
-![alt text](K线预测\Figs\fig-1-full.png)
+![alt text](Figs/fig-1-full.png)
 
 # 课题进展
 
