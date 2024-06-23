@@ -45,9 +45,10 @@ StockGPT仅使用到2000年的数据训练一次
 
 获得了119 %的年化收益率，夏普比率为6.5
 
-2.
+2.综述文章：
+来源期刊：PeerJ Computer Science  不过好像并不是好的期刊，四区
 
-
+![alt text](K线预测\Figs\fig-1-full.png)
 
 # 课题进展
 
