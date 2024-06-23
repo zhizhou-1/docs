@@ -36,7 +36,16 @@
 
 ### 上周进展
 所看文献：
-1.《StockGPT: A GenAI Model for Stock Prediction and Trading》 
+
+1.《StockGPT: A GenAI Model for Stock Prediction and Trading》 ：
+
+自回归"数"模型
+
+StockGPT仅使用到2000年的数据训练一次
+
+获得了119 %的年化收益率，夏普比率为6.5
+
+2.
 
 
 
