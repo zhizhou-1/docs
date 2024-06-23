@@ -3,9 +3,9 @@
 # 课题记录
 ## 24-0518开题
 [开题报告](开题报告.pdf)
-主要参考：[《Interpretable image-based deep learning for price trend prediction in ETF markets》](<Zhang 等 - 2023 - Interpretable image-based deep learning for price .pdf>)，
+主要参考：[《Interpretable image-based deep learning for price trend prediction in ETF markets》](<K线预测\文献\Zhang 等 - 2023 - Interpretable image-based deep learning for price .pdf>)，
 
-上述文章又参考了[(Re‐)Imag(in)ing Price Trends](<Jiang 等 - 2023 - (Re‐)Imag(in)ing Price Trends.pdf>)
+上述文章又参考了[(Re‐)Imag(in)ing Price Trends](<K线预测\文献\Jiang 等 - 2023 - (Re‐)Imag(in)ing Price Trends.pdf>)
 
 整体思路：
 
