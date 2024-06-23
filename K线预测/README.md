@@ -31,6 +31,15 @@
 先把相关的模型、算法看一下，花两周时间把文献中的方法整理一下，不一定是图像预测分类，近两年做预测的各种方法，如扩散模型、transformer、attention-LSTM、强化学习，看一下效果，预测准确率、策略收益率等
 
 
+
+## 06-24
+
+### 上周进展
+所看文献：
+1.《StockGPT: A GenAI Model for Stock Prediction and Trading》 
+
+
+
 # 课题进展
 
 ## K线数据拆分
