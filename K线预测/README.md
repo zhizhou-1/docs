@@ -47,12 +47,11 @@ StockGPT仅使用到2000年的数据训练一次
 ####  2. 综述文章：2024年
 来源期刊：PeerJ Computer Science  不过好像并不是好的期刊，四区
 
-![alt text](Figs/fig-1-full.png) {width=300px height=200px}
+![alt text](Figs/fig-1-full.png) 
 
 
 
-####  3. 综述：2022年 《A comprehensive review on multiple hybrid deep learning approaches for
-stock prediction》
+####  3. 综述：2022年 《A comprehensive review on multiple hybrid deep learning approaches for stock prediction》
 
 CNN - LSTM混合模型在预测股票价格的未来趋势和偏转范围方面非常准确，可用于生成投资组合。混合CNN和LSTM模型在处理更频繁的数据时表现出良好的准确性，因为CNN由于能够捕捉系统中的快速变化而优于LSTM
 
@@ -91,6 +90,7 @@ First, except for double CNN architecture, we observe that proposed PHNNs outper
 
 
 无论在哪种情况下，具有LSTM - LSTM子网络的PHNN在所有模型中都贡献了最高的年收益
+
 
 <!-- 
 可预测准确率?
@@ -156,7 +156,11 @@ Metric
 
 ####  6. 《Attention based adaptive spatial–temporal hypergraph convolutional networks for stock price trend prediction》
 
+![alt text](image-6.png)
 
+准确率、精确率、召回率、F1分数、马修斯相关系数（MCC）
+
+![alt text](image-7.png)
 
 
 # 课题进展
