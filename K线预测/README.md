@@ -36,7 +36,7 @@
 ### 上周进展
 所看文献：
 
-#### 1.《StockGPT: A GenAI Model for Stock Prediction and Trading》 ：
+#### 1.2023 《StockGPT: A GenAI Model for Stock Prediction and Trading》 ：
 
 自回归"数"模型
 
@@ -58,6 +58,7 @@ CNN - LSTM混合模型在预测股票价格的未来趋势和偏转范围方面�
 
 3.1 《Universal features of price formation in financial markets: perspectives from Deep Learning》
 
+深度学习、递归神经网络
 
 准确率根据股票种类不同而不同，大体上呈现为均值为67%的正态分布
 
@@ -162,6 +163,16 @@ Metric
 
 ![alt text](image-7.png)
 
+
+### 组会记录
+
+1. 仔细看看效果最好的那篇文章《A parallel hybrid neural networks model for forecasting returns with candlestick technical trading strategy》
+
+2. 老师的想法是先了解现在大家都在用哪些模型，在模型上做了什么改动，确定一个底层模型之后再考虑怎么往上面加拼图
+
+3. 尝试复现一个图像分类预测股价的模型，用tensorflow 或pytorch
+
+4. 老师听朋友说GRU效果比较好，可以尝试一下，然后LSTM是过时的方法
 
 # 课题进展
 
