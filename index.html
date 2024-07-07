@@ -31,6 +31,13 @@
     <div id="app">加载中...</div>
     <script>
         window.$docsify = {
+          formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
+
+  formatUpdated: function(time) {
+    // ...
+
+    return time;
+  },
             // 项目名称
             //name: '学习',
             // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
