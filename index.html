@@ -13,6 +13,17 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- 默认主题 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <!-- 更新记录 -->
+    <link
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+  />
+  <!-- 侧边栏设置arrow style -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 </head>
 
 <body>
@@ -20,14 +31,6 @@
     <div id="app">加载中...</div>
     <script>
         window.$docsify = {
-          //设置更新时间
-          formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
-
-  formatUpdated: function(time) {
-    // ...
-
-    return time;
-  },
             // 项目名称
             //name: '学习',
             // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
@@ -106,6 +109,8 @@
   
     <!-- 风格选择 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+
+    <!-- 更新记录 -->
 
     <!-- code render-->
   <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-bash.js"></script>
