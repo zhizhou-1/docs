@@ -33,18 +33,13 @@
     <div id="app">加载中...</div>
     <script>
         window.$docsify = {
-          // 时间设置
-          formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
-
-  formatUpdated: function(time) {
-    // ...
-
-    return time;
-  },
+          
             // 项目名称
-            //name: '学习',
+            name: '项目及课题记录',
             // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
             repo:'zhizhou-1/docs/',
+            // 时间设置
+            formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
             lastModified: {
         repo: 'zhizhou-1/docs/'
     },
@@ -102,26 +97,21 @@
             isExpected: true
         },
         }
-      </script>
-       <!-- 时间设置 -->
-        <script src="//cdn.jsdelivr.net/npm/tinydate@1.3.0/dist/tinydate.min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/rxmapple/docsify-last-modified@main/src/docsify-last-modified.js"></script>
-
- 
     <!-- MathJax -->
     <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
-    <!-- docsify的js依赖 -->
-    <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
+    
     <!-- emoji表情支持 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
     <!-- 图片放大缩小支持 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <!-- 搜索功能支持 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-    <!-- 侧边栏插件 -->
+   
+     <!-- docsify的js依赖 -->
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+     <!-- 侧边栏插件 -->
     <!-- plugins -->
     <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   
@@ -155,4 +145,8 @@
 
 
 </body>
+
+       <!-- 时间设置 -->
+       <script src="//cdn.jsdelivr.net/npm/tinydate@1.3.0/dist/tinydate.min.js"></script>
+       <script src="//cdn.jsdelivr.net/gh/rxmapple/docsify-last-modified@main/src/docsify-last-modified.js"></script>
 </html>
