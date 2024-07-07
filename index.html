@@ -72,13 +72,13 @@
     <div id="app">加载中...</div>
 
     <!-- 添加显示当前时间和最后更新时间的区域 -->
-    <div class="countable">
-        <div style="float: right; font-size: 0.9em; color: rgb(90, 90, 90);">
-            <span>当前时间：<span id="current-time"></span></span>
+    <div class="footer-content">
+        <div>
+            <span id="current-time"></span>
             &nbsp; | &nbsp;
-            <span>Last updated: <span id="last-updated"></span></span>
+            <span id="last-updated"></span>
         </div>
-        <div style="clear: both"></div>
+        <div class="countable"></div>
     </div>
 
     <script>
@@ -94,25 +94,12 @@
             second: '2-digit'
         });
         // 显示当前时间
-        document.getElementById('current-time').textContent = formattedTime;
+        document.getElementById('current-time').textContent = `当前时间：${formattedTime}`;
 
         // 获取最后更新时间
         const lastUpdated = document.querySelector('meta[name="last-modified"]').content;
         // 显示最后更新时间
-        document.getElementById('last-updated').textContent = lastUpdated || '无法获取最后更新时间';
-
-        // 添加二级菜单点击事件
-        document.querySelectorAll('.sidebar .sidebar-nav ul li > a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const nextElement = this.nextElementSibling;
-                if (nextElement && nextElement.tagName === 'UL') {
-                    e.preventDefault();  // 阻止默认链接行为
-                    const isVisible = nextElement.style.display === 'block';
-                    nextElement.style.display = isVisible ? 'none' : 'block';
-                    this.parentElement.classList.toggle('active', !isVisible);
-                }
-            });
-        });
+        document.getElementById('last-updated').textContent = `Last updated: ${lastUpdated || '无法获取最后更新时间'}`;
     </script>
 
     <script>
@@ -174,7 +161,23 @@
                 isExpected: true
             }
         }
+
+        // 添加二级菜单点击事件
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.sidebar .sidebar-nav ul li > a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const nextElement = this.nextElementSibling;
+                    if (nextElement && nextElement.tagName === 'UL') {
+                        e.preventDefault();  // 阻止默认链接行为
+                        const isVisible = nextElement.style.display === 'block';
+                        nextElement.style.display = isVisible ? 'none' : 'block';
+                        this.parentElement.classList.toggle('active', !isVisible);
+                    }
+                });
+            });
+        });
     </script>
+
     <!-- MathJax -->
     <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
