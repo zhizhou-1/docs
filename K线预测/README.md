@@ -131,6 +131,7 @@ Metric
 
 ![alt text](image-3.png)
 
+
 | Dataset | Metric | Buy and Hold | Sell and Hold | MR | TF | TDQN | MLP-Vanilla | DQN-Vanilla | Final agent |
 |---------|--------|--------------|---------------|----|----|------|-------------|-------------|-------------|
 | AAPL    | CR     | 7.49%        | −8.10%        | −35.24% | 5.46%  | −39.62% | 22.97%     | 53.30%     | 60.75%     |
@@ -173,6 +174,8 @@ Metric
 3. 尝试复现一个图像分类预测股价的模型，用tensorflow 或pytorch
 
 4. 老师听朋友说GRU效果比较好，可以尝试一下，然后LSTM是过时的方法
+
+5. 详细了解注意力机制，看文献《Attention is All you Need》
 
 # 课题进展
 
