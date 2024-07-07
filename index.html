@@ -20,20 +20,30 @@
         .sidebar .sidebar-nav ul ul {
             display: none;
         }
-        
+
         /* 展开二级菜单 */
         .sidebar .sidebar-nav ul li.active > ul {
             display: block;
         }
 
+        /* 设置二级菜单的点击事件 */
+        .sidebar .sidebar-nav ul li > a {
+            cursor: pointer;
+        }
+
         /* 显示时间区域 */
         .footer-content {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 10px;
+            justify-content: space-between; /* 将子元素分布在容器两侧 */
+            align-items: center; /* 垂直居中对齐 */
+            margin: 10px; /* 添加外边距 */
+            padding: 5px 10px; /* 添加内边距 */
+            background-color: #f1f1f1; /* 设置背景颜色 */
+            border-radius: 5px; /* 添加圆角 */
+            border: 1px solid #ddd; /* 添加边框 */
         }
-        
+
+        /* 时间显示的样式 */
         .footer-content p {
             margin: 0;
             padding: 0;
@@ -41,6 +51,10 @@
 
         .footer-content #current-time {
             font-weight: bold;
+            color: rgb(90, 90, 90);
+        }
+
+        .footer-content #last-updated {
             color: rgb(90, 90, 90);
         }
 
@@ -82,6 +96,19 @@
         const lastUpdated = document.querySelector('meta[name="last-modified"]').content;
         // 显示最后更新时间
         document.getElementById('last-updated').textContent = lastUpdated || '无法获取最后更新时间';
+
+        // 添加二级菜单点击事件
+        document.querySelectorAll('.sidebar .sidebar-nav ul li > a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const nextElement = this.nextElementSibling;
+                if (nextElement && nextElement.tagName === 'UL') {
+                    e.preventDefault();  // 阻止默认链接行为
+                    const isVisible = nextElement.style.display === 'block';
+                    nextElement.style.display = isVisible ? 'none' : 'block';
+                    this.parentElement.classList.toggle('active', !isVisible);
+                }
+            });
+        });
     </script>
 
     <script>
@@ -120,7 +147,7 @@
             /*搜索相关设置*/
             search: {
                 paths: 'auto', // 注意：仅适用于 paths: 'auto' 模式
-                placeholder: '搜索',              
+                placeholder: '搜索',
                 // 支持本地化
                 placeholder: {
                     '/zh-cn/': '搜索',
@@ -131,13 +158,14 @@
                 hideOtherSidebarContent: false,
                 namespace: 'Docsify-Guide',
             },
+
             count: {
                 countable: true,
                 position: 'top',
                 margin: '10px',
                 float: 'right',
                 fontsize: '0.9em',
-                color: 'rgb(90,90,90)',
+                color: 'rgb(90, 90, 90)',
                 language: 'chinese',
                 isExpected: true
             }
@@ -154,6 +182,7 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
     <!-- 搜索功能支持 -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
     <!-- code render-->
     <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-bash.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-python.js"></script>
@@ -178,5 +207,4 @@
     <!--字数统计-->
     <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 </body>
-
 </html>
